@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link href="style.css" rel="stylesheet">
+      <meta charset="UTF-8"/>
+      <title>Cálculo de produção por hora - HI-MIX</title>
+</head>
+<body>
+      <h1>Cálculo de produção-SMT</h1>
+      <div id="before">
+            <p>Informe a quantidade de placas Planejadas:</p>
+            <input id="planejadas" required="required" type=”text” pattern="[0-9]+$" value=""></input>
+            <p>Informe a quantidade de placas Produzidas:</p>
+            <input id="produzidas" required="required" type=”text” pattern="[0-9]+$" value=""></input>
+            <p>Informe a quantidade de placas em Reparo:</p>
+            <input id="boas" required="required" type=”text” pattern="[0-9]+$" value=""></input>
+      </div>
+      <br>
+      <div id="after" style="display: none">
+            <p>Eficiencia:</p> <p id="eficiencia"></p>
+            <p>Diferenca:</p> <p id="diferenca"></p>
+            <p>YIELD:</p> <p id="treco"></p>
+            <p>Tempo a justificar:</p> <p id="tempo"></p>
+      </div>
+      <button id="btn_calc" type="button" onclick="Calcular();">Calcular</button>
+      <button id="btn_nov" type="button" onclick="C_Novamente();" style="display:none">Calcular novamente</button>
+      
+      <script src="scripts.js"></script>
+</body>
+</html>
